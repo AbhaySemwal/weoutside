@@ -346,7 +346,7 @@ const Post = ({ post, user, token, prof }) => {
                   className="flex flex-col gap-0.5 px-2 py-1 bg-slate-200 rounded-lg"
                 >
                 <div className="flex gap-1 items-center">
-                  <Image className="relative h-[35px] w-[35px] rounded-full bg-cover" height={1000} width={1000} src={comment.userImage?comment.userImage:"/prof.jpg"}></Image>
+                  <Image className="relative h-[35px] w-[35px] rounded-full object-cover" height={1000} width={1000} src={comment.userImage?comment.userImage:"/prof.jpg"}></Image>
                   <span className="text-sm font-semibold">
                     {comment.username}
                   </span>
